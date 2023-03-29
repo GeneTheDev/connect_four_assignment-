@@ -14,14 +14,14 @@ body {
     width: 100%;
 }
 
-/* h1 {
+h1 {
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     border: solid 2px #26a3d1;
     padding: 10px;
     background-color: #26a3d1;
     letter-spacing: 10px;
-} */
+}
 
 .game-board {
     display: grid;
@@ -30,6 +30,7 @@ body {
     height: 700px;
     margin: 10px 0 25px;
     width: 700px;
+    margin-top: 30px;
 }
 
 .cell {
@@ -55,16 +56,16 @@ body {
     background: red;
 }
 
-.cell:not(.row-top).green::after {
-    background: green;
+.cell:not(.row-top).yellow::after {
+    background: yellow;
 }
 
 .cell:not(.row-top).red.win {
     background: red;
 }
 
-.cell:not(.row-top).green.win {
-    background: green;
+.cell:not(.row-top).yellow.win {
+    background: yellow;
 }
 
 .cell.row-top {
@@ -77,6 +78,11 @@ body {
 
 .cell.row-top.red::after {
     background: red;
+    border: 3px solid black;
+}
+
+.cell.row-top.yellow::after {
+    background: yellow;
     border: 3px solid black;
 }
 
